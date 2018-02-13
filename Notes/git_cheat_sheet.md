@@ -21,3 +21,13 @@ This will move your HEAD pointer back two commits and delete everything _above_ 
 If you would like to preserve the commits you'd do:
 
 `git reset --soft HEAD~2`
+
+### Example
+You would like to move the last two commits to a new branch
+
+`git checkout -b new_branch_name_here`
+`git reset --hard HEAD~2`
+
+To go to the branch afterwards you'd do:
+
+`git checkout new_branch_name_here`
